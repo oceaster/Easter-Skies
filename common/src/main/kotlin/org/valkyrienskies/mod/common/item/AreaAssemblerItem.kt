@@ -31,6 +31,7 @@ class AreaAssemblerItem(
 
     override fun useOn(ctx: UseOnContext): InteractionResult {
         val level = ctx.level as? ServerLevel ?: return super.useOn(ctx)
+        if (!EasterConstruction.allowed(ctx)) return InteractionResult.FAIL
         val blockPos = ctx.clickedPos
         val blockState: BlockState = level.getBlockState(blockPos)
         val item = ctx.itemInHand

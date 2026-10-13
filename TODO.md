@@ -1,6 +1,10 @@
 # Easter Skies backlog
 
-## ES-01 — 26.2 physics port (not started)
+## ES-01 — 26.2 physics port (in progress)
+2026-10-13: portable JDK 17 and verified Gradle 8.3 bootstrapped; Fabric-only
+configuration now skips Forge. All six Fabric/common Java/Kotlin compile tasks
+passed on the preserved 1.20.1 baseline. Minecraft 26.2 API/rendering/storage
+migration and physics playtests still need implementation; no 26.2 binary exists.
 Scope: Minecraft/Fabric mixins, ship storage, rendering and native/core dependencies.
 Keep the 1.20.1 baseline reproducible. Identify a working Java/Gradle toolchain and
 compile Fabric before touching the live mod stack. Acceptance: isolated 26.2
@@ -12,7 +16,12 @@ Enforce encounter provenance at authoritative creation/assembly paths. No player
 crafting/shop/helm bypass. Acceptance: every factory denies an unproven player-built
 large hull; generated encounter hulls and refits of acquired hulls remain usable.
 
-## ES-03 — ship registry and law adapters (blocked by ES-01)
+## ES-03 — ship registry and law adapters (Shippy runtime implemented; VS adapter pending)
+2026-10-13: Navy integration now registers actual 26.2 Shippy ships, captures NPC
+ships, persists names/owners, shares HouseAccess rosters, and observes real helm
+input/storage mutations. Isolated-server tests passed guest logout piracy and
+actual Shippy-menu theft without cancelling actions. VS moving-block storage and
+helm attachment lookup remain dependent on ES-01.
 Nameable large ships; stable ship ID, persistent ownership and source-container
 lookup through moving coordinates. Integrate the named-ship law in EASTER_SHIP_LAW.md
 using the existing owner's home roster. Never block piloting or chest theft.

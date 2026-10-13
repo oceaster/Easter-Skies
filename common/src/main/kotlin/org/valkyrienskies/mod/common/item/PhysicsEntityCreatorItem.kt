@@ -25,6 +25,7 @@ class PhysicsEntityCreatorItem(
 
     override fun useOn(ctx: UseOnContext): InteractionResult {
         val level = ctx.level as? ServerLevel ?: return super.useOn(ctx)
+        if (!EasterConstruction.allowed(ctx)) return InteractionResult.FAIL
 
         if (!level.isClientSide) {
             val entity = ValkyrienSkiesMod.PHYSICS_ENTITY_TYPE.create(level)!!

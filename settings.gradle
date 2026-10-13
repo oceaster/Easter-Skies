@@ -41,7 +41,10 @@ dependencyResolutionManagement {
 
 include("common")
 include("fabric")
-include("forge")
+// A Fabric port must not configure or download the unrelated Forge toolchain.
+if (enabled_platforms.split(",").contains("forge")) {
+    include("forge")
+}
 
 try {
     def core = file("./vs-core")
