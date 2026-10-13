@@ -2,8 +2,15 @@
 <img src="vs_logo.png" width="200" height="200">
 </p>
 <h1 align="center">
-Valkyrien Skies
+Easter Skies
 </h1>
+
+Experimental Easter Fleet fork of [Valkyrien Skies 2](https://github.com/ValkyrienSkies/Valkyrien-Skies-2).
+Original authors and license remain credited in [EASTER_CREDITS.md](EASTER_CREDITS.md).
+This branch targets the upstream Minecraft 1.20.1 baseline, **not** our live 26.2 server.
+See [EASTER_FLEET.md](EASTER_FLEET.md) for the agreed progression and current implementation status.
+
+The remaining README below is preserved upstream documentation, not an Easter release announcement.
 <p align="center">
 <a href="https://www.valkyrienskies.org/"><img src="https://img.shields.io/badge/Website-white?style=for-the-badge&logo=html5&logoColor=black" alt="Website"></a>
 <a href="https://www.curseforge.com/minecraft/mc-mods/valkyrien-skies"><img src="https://img.shields.io/badge/CurseForge-white?style=for-the-badge&logo=curseforge" alt="CurseForge"></a>

@@ -2,18 +2,18 @@
   "schemaVersion": 1,
   "id": "valkyrienskies",
   "version": "${version}",
-  "name": "Valkyrien Skies 2",
-  "description": "Moving blocks with physics :)",
+  "name": "Easter Skies",
+  "description": "Easter Fleet physics foundation, forked from Valkyrien Skies 2; experimental upstream-version baseline.",
   "authors": [
     "Tri0de",
     "Rubydesic"
   ],
   "contact": {
     "homepage": "https://valkyrienskies.org/",
-    "sources": "https://github.com/ValkyrienSkies/Valkyrien-Skies-2/",
-    "issues": "https://github.com/ValkyrienSkies/Valkyrien-Skies-2/issues"
+    "sources": "https://github.com/oceaster/Easter-Skies",
+    "issues": "https://github.com/oceaster/Easter-Skies/issues"
   },
-  "license": "Apache-2.0",
+  "license": "LGPL-3.0",
   "icon": "assets/valkyrienskies/icon.png",
   "environment": "*",
   "entrypoints": {

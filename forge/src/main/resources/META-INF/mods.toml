@@ -1,12 +1,12 @@
 modLoader = "javafml"
 loaderVersion = "[40,)"
-issueTrackerURL = "https://github.com/ValkyrienSkies/Valkyrien-Skies-2/issues"
-license = "Apache-2.0"
+issueTrackerURL = "https://github.com/oceaster/Easter-Skies/issues"
+license = "LGPL-3.0"
 
 [[mods]]
 modId = "valkyrienskies"
 version = "${version}"
-displayName = "Valkyrien Skies 2"
+displayName = "Easter Skies"
 authors = ["Tri0de", "Rubydesic"]
 description = '''
 Moving blocks with physics :)
